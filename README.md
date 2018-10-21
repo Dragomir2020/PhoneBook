@@ -1,4 +1,4 @@
-# PhoneBook
+# PhoneBook [![Build Status](https://travis-ci.org/Dragomir2020/PhoneBook.svg?branch=master)](https://travis-ci.org/Dragomir2020/PhoneBook)  [![Coverage Status](https://coveralls.io/repos/github/Dragomir2020/PhoneBook/badge.svg?branch=master)](https://coveralls.io/github/Dragomir2020/PhoneBook?branch=master)
 
 BST implemented in c++ that has a phone book interface
 Templated to allow for multiple data types
