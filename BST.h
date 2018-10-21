@@ -528,7 +528,7 @@ namespace DataStructures{
         void Save(std::string filePath){
             std::list<DataStructures::Person>* treeList = pb->GetPeople();
             std::ofstream myfile;
-            myfile.open(filePath);
+            myfile.open(filePath.c_str());
             for(std::list<DataStructures::Person>::iterator it = treeList->begin(); it != treeList->end(); ++it){
                 myfile << it->firstName << "," << it->lastName << "," << it->phoneNumber << "\n";
             }
