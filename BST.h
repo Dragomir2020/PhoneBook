@@ -536,7 +536,7 @@ namespace DataStructures{
         }
         // Loads tree from text file
         void Load(std::string filePath){
-            std::ifstream input(filePath);
+            std::ifstream input(filePath.c_str());
             std::vector<std::string>* person;
             for( std::string line; getline( input, line ); )
             {
