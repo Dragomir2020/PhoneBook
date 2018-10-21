@@ -22,15 +22,14 @@
 #ifndef BST_H
 #define BST_H
 
-//#include <ostream>
 #include <fstream>
 #include <string>
-//#include <sstream>
+#include <sstream>
 #include <iostream>
-//#include <algorithm>
 #include <cmath>
 #include <stdexcept>
 #include <list>
+#include <vector>
 
 namespace DataStructures{
     
