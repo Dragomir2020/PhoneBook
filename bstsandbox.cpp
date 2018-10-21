@@ -4,6 +4,7 @@
 #include <list>
 // Library for BST and PhoneBook
 #include <BST.h>
+#include <vector>
 
 int main(int argc, char* argv[]){
     
@@ -37,8 +38,7 @@ int main(int argc, char* argv[]){
     std::cout << "Found(Scott Smith): " << pb->Find("Scott","Smith") << std::endl;
     
     // Redundant but shows how to delete
-    pb->Quit();
-    //delete pb;
+    delete pb;
     
     return 0;
 }
