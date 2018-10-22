@@ -51,6 +51,24 @@ public:
         TS_ASSERT(pb->Find("Joey","Gill") == "-1");
         delete pb;
     }
+	
+    void testDelete3(){
+	DataStructures::PhoneBook<DataStructures::Person>* pb = new DataStructures::PhoneBook<DataStructures::Person>();
+	pb->Add("Joey","Gill","+13304925839");
+	pb->Add("Bob","Dylan","+13304925839");
+	pb->Add("Gram","Nap","+13304925839");
+	pb->Add("Hello","World","+13304925834");
+	pb->Add("Sandra","Mech","+13304925839");
+	pb->Add("Low","Down","+13304925839");
+	pb->Delete("Joey", "Gill");
+	pb->Delete("Sandra", "Mech");
+	pb->Delete("Gram", "Nap");
+	pb->Delete("Low", "Down");
+	pb->Delete("Bob", "Dylan");
+	TS_ASSERT(pb->Count() == 1);
+	TS_ASSERT(pb->Find("Hello","World") == "+13304925834");
+	delete pb;
+    }
     
     // Test the count
     void testCount1(){
