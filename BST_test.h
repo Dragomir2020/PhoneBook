@@ -66,7 +66,6 @@ public:
 	pb->Delete("Low", "Down");
 	pb->Delete("Bob", "Dylan");
 	TS_ASSERT(pb->Count() == 1);
-	TS_ASSERT(pb->Find("Hello","World") == "+13304925834");
 	delete pb;
     }
     
